@@ -17,3 +17,16 @@
 
 - 06 Cross-Platform Access
   Web and mobile users can access problems, submit answers, and track progress through a shared API.
+
+# Scope Exclusions 
+- AI Tutor / LLM Chatbot
+- Arbitrary Code Execution
+- AI-generated Exercises
+- Adaptive Learning ML Model
+- Leaderboard / Gamification
+- Social Features
+- CMS
+- Multi-language Code Support
+- Microservices / Distributed Systems
+- Production-scale Deployment
+
