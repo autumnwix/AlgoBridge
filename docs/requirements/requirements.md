@@ -4,11 +4,12 @@
 **Prepared by:** Autumn and Aon  
 **Organization:** Assumption University of Thailand - Senior Project 1  
 **Date created:** 2026-11-10  
-**Development target:** Integrated internal release by 2027-02-12  
+**Development target:** Integrated internal release by 2027-02-12
 
 > **Document status:** This SRS is a draft for the proposed project and has not yet been approved by the advisor or put into practice. It brings together the project's previous proposal, scope, use cases, draft architecture, and initial Figma designs. The exercise target is **12 complete exercises, covering four algorithm categories with three exercises in each category**. The final exercise choices and development order will be decided after checking what is practical to complete.
 
 ## Table of Contents
+
 - [1. Introduction](#1-introduction)
 - [2. Product Overview](#2-product-overview)
 - [3. Requirements](#3-requirements)
@@ -17,9 +18,9 @@
 
 ## Revision History
 
-| Date | Version | Changes |
-|--|--|--|
-| 2026-11-09 | 0.1  | initial draft adapted from proposal; <br/>requirements are written in "shall" format for mandatory system requirements |
+| Date       | Version | Changes                                                                                                                |
+| ---------- | ------- | ---------------------------------------------------------------------------------------------------------------------- |
+| 2026-11-09 | 0.1     | initial draft adapted from proposal; <br/>requirements are written in "shall" format for mandatory system requirements |
 
 ## 1. Introduction
 
@@ -39,25 +40,25 @@ The product will have a Web client and a mobile client using the same backend. G
 
 ### 1.3 Definitions
 
-| Term | Definition |
-|--|--|
-| Exercise | A selected algorithm problem containing a statement and a guided reasoning workflow. |
-| Guest | A learner who uses the system without logging in. Their practice records are not saved to an account. |
-| Hint | A prepared clue to help learners at a certain reasoning stage on request. |
-| Reasoning stage | One ordered checkpoint asking the learner to make a structured reasoning decision. |
-| Rule-based validation | Checking a learner's structured answer with a set of predefined rules. |
-| Session | One attempt by a logged-in student to complete an exercise. |
+| Term                  | Definition                                                                                            |
+| --------------------- | ----------------------------------------------------------------------------------------------------- |
+| Exercise              | A selected algorithm problem containing a statement and a guided reasoning workflow.                  |
+| Guest                 | A learner who uses the system without logging in. Their practice records are not saved to an account. |
+| Hint                  | A prepared clue to help learners at a certain reasoning stage on request.                             |
+| Reasoning stage       | One ordered checkpoint asking the learner to make a structured reasoning decision.                    |
+| Rule-based validation | Checking a learner's structured answer with a set of predefined rules.                                |
+| Session               | One attempt by a logged-in student to complete an exercise.                                           |
 
 ### 1.4 References
 
-1. *AlgoBridge — Project Scope v1.0 (Working Baseline)*, Autumn and Aon, 2026-11-10, `docs/project/scope.md` (informative; superseded where this SRS changes scope).
-2. *AlgoBridge — Core Use Cases v0.1*, Autumn and Aon, 2026-11-10, `docs/requirements/use-cases.md` (informative).
-3. *AlgoBridge — Architecture Draft v0.1 (Monorepo)*, Autumn and Aon, 2026-11-10, `docs/design/architecture.md` (informative; proposed architecture).
-4. *AlgoBridge proposal-stage Figma design*, Autumn and Aon, https://www.figma.com/design/q742RXyimnSC1U86bx9Sud/AlgoBridge---Copy?node-id=2001-324 (informative visual reference, not final implementation acceptance).
+1. _AlgoBridge - Project Scope v1.0 (Working Baseline)_, Autumn and Aon, 2026-11-10, `docs/project/scope.md` (informative; superseded where this SRS changes scope).
+2. _AlgoBridge - Core Use Cases v0.1_, Autumn and Aon, 2026-11-10, `docs/requirements/use-cases.md` (informative).
+3. _AlgoBridge - Architecture Draft v0.1 (Monorepo)_, Autumn and Aon, 2026-11-10, `docs/design/architecture.md` (informative; proposed architecture).
+4. _AlgoBridge proposal-stage Figma design_, Autumn and Aon, https://www.figma.com/design/q742RXyimnSC1U86bx9Sud/AlgoBridge---Copy?node-id=2001-324 (informative visual reference, not final implementation acceptance).
 
 ### 1.5 Document Overview
 
-Section 2 summarizes the product, its users, and scope. Section 3 defines planned behavior and engineering constraints. Section 4 lists practical verification scenarios; Section 5 records exercise coverage and outstanding decisions. Requirements within each feature group are numbered sequentially. “Must” items define the intended MVP; “Should” items are desirable but may be deferred if necessary to meet the delivery deadline.
+Section 2 summarizes the product, its users, and scope. Section 3 defines planned behavior and engineering constraints. Section 4 lists practical verification scenarios; Section 5 records exercise coverage and outstanding decisions. Requirements within each feature group are numbered sequentially. "Must" items define the intended MVP; "Should" items are desirable but may be deferred if necessary to meet the delivery deadline.
 
 ## 2. Product Overview
 
@@ -92,15 +93,15 @@ The current Figma prototype already shows the reasoning workspace, feedback/hint
 
 ### 2.4 User Characteristics
 
-|User|Expected usage| Access|
-|--|--|--|
-|Guest|Browse and complete exercises without an account|Published exercises, feedback, hints, and temporary practice only|
-|Student/Learner| Practice regularly and keep track progress|Guest features plus saved sessions, resume unfinished exercises, and a personal dashboard|
-|Admin| Manage and update content| Draft and published exercise management|
+| User            | Expected usage                                   | Access                                                                                    |
+| --------------- | ------------------------------------------------ | ----------------------------------------------------------------------------------------- |
+| Guest           | Browse and complete exercises without an account | Published exercises, feedback, hints, and temporary practice only                         |
+| Student/Learner | Practice regularly and keep track progress       | Guest features plus saved sessions, resume unfinished exercises, and a personal dashboard |
+| Admin           | Manage and update content                        | Draft and published exercise management                                                   |
 
 Learners are expected to have basic programming, data structure, and algorithms knowledge. The interface should use simple and clear language, show progress through each reasoning stage, and provide helpful feedback when learners make mistakes.
 
-The MVP only support English language. 
+The MVP only support English language.
 
 ### 2.5 Assumptions and Dependencies
 
@@ -113,13 +114,13 @@ The MVP only support English language.
 
 ### 2.6 Apportioning of Requirements
 
-|Release/phase|Time|Planned coverage|
-|--|--|--|
-|Early proof of concept|by 2026-12-06, target|One full reasoning flow using 0/1 Knapsack; backend validation and feedback through the Web|
-|Core engine development|December–January|Account management, main learner workflow, mobile integration, save/resume, content expansion|
-|Feature-complete target|2027-01-31|All Must requirements and 12 exercise configurations, subject to progress review|
-|Internal integrated release|2027-02-12|Tested Web/mobile workflows, consistent data, demonstration scenario and documentation|
-|Deferred/optional|N/A|Advanced analytics, recommendation system, advanced exercise editing interface|
+| Release/phase               | Time                  | Planned coverage                                                                              |
+| --------------------------- | --------------------- | --------------------------------------------------------------------------------------------- |
+| Early proof of concept      | by 2026-12-06, target | One full reasoning flow using 0/1 Knapsack; backend validation and feedback through the Web   |
+| Core engine development     | December-January      | Account management, main learner workflow, mobile integration, save/resume, content expansion |
+| Feature-complete target     | 2027-01-31            | All Must requirements and 12 exercise configurations, subject to progress review              |
+| Internal integrated release | 2027-02-12            | Tested Web/mobile workflows, consistent data, demonstration scenario and documentation        |
+| Deferred/optional           | N/A                   | Advanced analytics, recommendation system, advanced exercise editing interface                |
 
 > **Feasibility:** The current MVP target is 12 complete exercises, but this number may change depending on the actual workload and development progress. The time needed to create and check each exercise may also vary.
 
@@ -160,13 +161,13 @@ The following are the **Must** requirements for the MVP unless labeled as **Shou
 
 #### 3.2.2 Exercise catalogue and coverage
 
-1. The MVP shall provide 12 complete exercises: 3 in each of 4 categories (Divide and Conquer, Dynamic Programming, Greedy Algorithms, and Graph).
+1. The MVP shall provide 12 complete exercises: 3 in each of 4 categories (Divide and Conquer, Dynamic Programming, Greedy Algorithms, and Backtracking/Search).
 2. Guests and Students shall be able to browse published exercises and filter them by algorithm category.
 3. Each exercise shall display a title, topic, difficulty, problem statement, examples, and constraints.
 4. Unpublished exercises shall not appear in the public catalogue.
 5. **Should:** A keyword search may be added after category browsing is working properly.
 
-For this requirement, an exercise counts as *complete* only when it has reviewed content, a full guided stage sequence, working validation/feedback, appropriate hints, and tests on the shared backend.
+For this requirement, an exercise counts as _complete_ only when it has reviewed content, a full guided stage sequence, working validation/feedback, appropriate hints, and tests on the shared backend.
 
 #### 3.2.3 Guided reasoning and validation
 
@@ -185,7 +186,9 @@ For this requirement, an exercise counts as *complete* only when it has reviewed
 2. The system shall save accepted submissions, stage completion, and hint usage for registered Students.
 3. Students shall be able to resume an incomplete attempt after signing in on Web or mobile.
 4. The dashboard shall display in-progress and completed exercises.
-5. Guest practice shall not save or appear as saved account history or offer cross-device resume.
+5. Students shall be able to start a new attempt for an exercise they have already completed. Each new attempt shall have its own progress and submission records.
+6. Guest practice shall not save or appear as saved account history or offer cross-device resume.
+7. Repeating an already accepted submission because of a network retry shall not create duplicate graded Student submissions.
 
 #### 3.2.5 Admin content management
 
@@ -208,7 +211,6 @@ For this requirement, an exercise counts as *complete* only when it has reviewed
 #### 3.3.2 Security
 
 #### 3.3.3 Reliability
-
 
 ### 3.4 Compliance (TBD)
 
@@ -252,7 +254,7 @@ For this requirement, an exercise counts as *complete* only when it has reviewed
 
 #### 3.5.7 Proof of Concept
 
-The first proof of concept will use **0/1 Knapsack** to test one complete workflow: load a stage, submit a structured response, check answers on the server, display feedback, move to the next stage or retry, and show summary. 
+The first proof of concept will use **0/1 Knapsack** to test one complete workflow: load a stage, submit a structured response, check answers on the server, display feedback, move to the next stage or retry, and show summary.
 
 A second exercise from another algorithm category should also be tested early to check that the reasoning engine can support different types of exercises, not just Knapsack.
 
@@ -294,7 +296,6 @@ flowchart TB
   SVC --> CONTENT[Exercise Content and Versions]
 ```
 
-
 **Planned Tech Stack:**
 
 - **Web:** Next.js, TypeScript
@@ -303,4 +304,4 @@ flowchart TB
 - **Database:** PostgreSQL
 - **Code Management:** GitHub monorepo
 
-### Appendix C. 
+### Appendix C.
