@@ -1,22 +1,25 @@
 # MVP Feature List
 
-- 01 Exercise Library
-  Pre-built algorithm practice problems, supporting topic categorization, problem descriptions, and difficulty tags.
+- 1. Exercise Library
+  Provide 12 selected algorithm exercises across four categories, with problem descriptions, examples, difficulty levels, and category filters.
   
-- 02 Guided Problem-Solving
-  Break problems into structured steps, such as choosing a strategy, predicting the execution result, and tracking variables and boundaries.
+- 2. Guided Problem-Solving
+  Guide learners through ordered reasoning stages using structured questions and answer controls, such as choosing strategies, predicting results, and tracking variables and boundaries.
   
-- 03 Deterministic Evaluation
-  Evaluate reproducible answers for supported problem types, displaying correctness and error reasons.
+- 3. Rule-Based Answer Checking
+  Check learners' structured answers using predefined rules on the server. Show whether answers are correct or incorrect and allow learners to try again.
   
-- 04 Structured Feedback
- Display pre-written explanations and hierarchical hints based on error type.
+- 4. Structured Feedback and Hints
+ Provide prepared feedback for correct and incorrect answers, along with step-by-step hints to help learners understand each reasoning stage.
 
-- 05 Learning Progress
- Record completed problems, completion status, and basic learning progress.
+- 5. Learning Progress
+ Allow registered Students to save their exercise attempts, completed stages, and hint usage. Provide a dashboard to view completed and unfinished exercises, and allow Students to resume their progress.
 
-- 06 Cross-Platform Access
-  Web and mobile users can access problems, submit answers, and track progress through a shared API.
+- 6. Cross-Platform Access
+  Allow Guests and Students to browse exercises and complete guided practice through Web and mobile applications using the same backend. Students can access their saved progress from either platform.
+
+- 7. Basic Admin Management
+  Allow authorized Admins to create and edit draft exercises, manage exercise content, and publish or unpublish exercises using predefined templates and configuration forms.
 
 # Scope Exclusions 
 - AI Tutor / LLM Chatbot
@@ -25,8 +28,7 @@
 - Adaptive Learning ML Model
 - Leaderboard / Gamification
 - Social Features
-- CMS
+- Advanced CMS or visual exercise editor
 - Multi-language Code Support
 - Microservices / Distributed Systems
 - Production-scale Deployment
-
