@@ -4,7 +4,8 @@
 **Prepared by:** Autumn and Aon  
 **Organization:** Assumption University of Thailand - Senior Project 1  
 **Date created:** 2026-11-10  
-**Development target:** Integrated internal release by 2027-02-12
+**Development target:** Integrated internal release by 2027-02-12  
+*the doc is using the template: [srs-template-bare](https://github.com/jam01/SRS-Template/blob/master/srs-template-bare.md)*
 
 > **Document status:** This SRS is a draft for the proposed project and has not yet been approved by the advisor or put into practice. It brings together the project's previous proposal, scope, use cases, draft architecture, and initial Figma designs. The exercise target is **12 complete exercises, covering four algorithm categories with three exercises in each category**. The final exercise choices and development order will be decided after checking what is practical to complete.
 
