@@ -7,10 +7,11 @@ This doc describes the planned system architecture, tech stack, and main data fl
 Implementation details may change during development.
 
 **version**
-|version||
-|||
-|||
-|||
+|version|date|changes|
+|--|--|--|
+|0.1|26-11-10|-|
+|0.2|26-11-13|add architecture and tech stack v2 |
+
 ## Table of Contents
 
 - [1.](#1-logical-architecture)
@@ -79,7 +80,7 @@ This version is focusing the team's own development on the reasoning engine usin
 - no authentication infrastructure
 - use existing UI components
 
-```
+```mermaid
 flowchart TD
     A[Next.js Web] --> C[FastAPI Backend]
     B[Expo Mobile] --> C
@@ -112,5 +113,5 @@ flowchart TD
 - the reasoning engine checks answers using predefined rules
 - web and mobile use the same API and validation logic
 
-The stack is not final. Hosting and database connection details will be confirmed during development. *v2 is *
+The stack is not final. Hosting and database connection details will be confirmed during development. *v2 is focusing on the core engine dev, proposed using more APIs for the system architecture*
 
