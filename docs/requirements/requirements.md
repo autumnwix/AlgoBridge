@@ -305,4 +305,18 @@ flowchart TB
 - **Database:** PostgreSQL
 - **Code Management:** GitHub monorepo
 
-### Appendix C.
+### Appendix C. Proposed MVP Exercise Content Production Matrix
+
+|No.|Category|Exercise|Draft Content|Configutr/Test|
+|ex001|Dynamic Programming||||
+|ex002|||||
+|ex003|||||
+|ex004|Dynamic Programming||||
+|ex005|||||
+|ex006|||||
+|ex007|||||
+|ex008|Dynamic Programmingjhk||||
+|ex009|||||
+|ex010|||||
+|ex011|||||
+|ex012|||||
