@@ -31,7 +31,7 @@ This document describes the planned features, limitations, and testing criteria 
 
 ### 1.2 Product Scope
 
-AlgoBridge is an educational platform that helps undergraduate Computer Science students practice **algorithmic problem-solving reasoning before coding**. Instead of executing or grading student programs, it presents selected algorithm problems as guided, structured reasoning stages, evaluates predefined answers, and provides contextual feedback and progressive hints.
+AlgoBridge is an educational platform that helps undergraduate Computer Science students practice **algorithm problem-solving reasoning before coding**. Instead of executing or grading student programs, it presents selected algorithm problems as guided, structured reasoning stages, evaluates predefined answers, and provides contextual feedback and progressive hints.
 
 The MVP targets **12 exercises distributed equally across four categories**: Divide and Conquer, Dynamic Programming, Greedy Algorithms, and Backtracking/Search (3 exercises in each category).
 
