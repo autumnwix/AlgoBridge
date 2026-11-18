@@ -1,9 +1,9 @@
 # AlgoBridge - Software Requirements Specification
 
-**Version:** 0.1 (draft)  
+**Version:** 0.2 (draft)  
 **Prepared by:** Autumn and Aon  
 **Organization:** Assumption University of Thailand - Senior Project 1  
-**Date created:** 2026-11-10  
+**Date created:** 2026-11-18  
 **Development target:** Integrated internal release by 2027-02-12  
 *the doc is using the template: [srs-template-bare](https://github.com/jam01/SRS-Template/blob/master/srs-template-bare.md)*
 
@@ -22,6 +22,7 @@
 | Date       | Version | Changes                                                                                                                |
 | ---------- | ------- | ---------------------------------------------------------------------------------------------------------------------- |
 | 2026-11-09 | 0.1     | initial draft adapted from proposal; <br/>requirements are written in "shall" format for mandatory system requirements |
+|2026-11-18|0.2|product scope changed; <br/>features adjusted; <br/>TBD|
 
 ## 1. Introduction
 
@@ -31,7 +32,7 @@ This document describes the planned features, limitations, and testing criteria 
 
 ### 1.2 Product Scope
 
-AlgoBridge is an educational platform that helps undergraduate Computer Science students practice **algorithm problem-solving reasoning before coding**. Instead of executing or grading student programs, it presents selected algorithm problems as guided, structured reasoning stages, evaluates predefined answers, and provides contextual feedback and progressive hints.
+AlgoBridge is a guided platform that helps students translate natural-language programming problems into structed problem representations, identify relevant constraints, choose appropriate data structures and algorithm strategies, and **formulate solutions before coding**.
 
 The MVP targets **12 exercises distributed equally across four categories**: Divide and Conquer, Dynamic Programming, Greedy Algorithms, and Backtracking/Search (3 exercises in each category).
 
@@ -308,15 +309,16 @@ flowchart TB
 ### Appendix C. Proposed MVP Exercise Content Production Matrix
 
 |No.|Category|Exercise|Draft Content|Configutr/Test|
-|ex001|Dynamic Programming||||
-|ex002|||||
-|ex003|||||
-|ex004|Dynamic Programming||||
-|ex005|||||
-|ex006|||||
-|ex007|||||
-|ex008|Dynamic Programmingjhk||||
-|ex009|||||
-|ex010|||||
-|ex011|||||
-|ex012|||||
+|--|--|--|--|--|
+|ex001|Dynamic Programming|0/1 Knapsack|W1|W2-3|
+|ex002|Divide and Conquer |Maximum Subarray|W3-5|W5|
+|ex003|Divide and Conquer |Binary Search|W5|W6|
+|ex004|Dynamic Programming |Climbing Stairs|W5|W7|
+|ex005|Greedy |Activity Selection|W6|W8|
+|ex006|Backtracking / Search |Subset Sum|W6|W8|
+|ex007|Divide and Conquer |Merge Sort|W7|W9|
+|ex008|Dynamic Programming |Minimum Coins|W7|W9|
+|ex009|Greedy|Fractional Knapsack|W8|W9|
+|ex010|Greedy |Interval Covering|W8|W10|
+|ex011|Backtracking / Search |Combination Sum|W8|W10|
+|ex012|Backtracking / Search |N-Queens|W8|W10|
