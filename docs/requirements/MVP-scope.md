@@ -1,41 +1,69 @@
 # MVP Feature List
 
-**1. Exercise Library**
+*adjusted feature scope after 1st advisor meeting*  
+**update time:** 11-25-26
 
-Provide 12 selected algorithm exercises across four categories, with problem descriptions, examples, difficulty levels, and category filters.
-  
-**2. Guided Problem-Solving**
+### Feature Scope
 
-Guide learners through ordered reasoning stages using structured questions and answer controls, such as choosing strategies, predicting results, and tracking variables and boundaries.
-  
-**3. Rule-Based Answer Checking**
+The project focuses on helping undergraduate CS students understand natural-language algorithm problems, identify relevant information, select suitable algorithms and data structures, and formulate solutions before coding.
 
-Check learners' structured answers using predefined rules on the server. Show whether answers are correct or incorrect and allow learners to try again.
-  
-**4. Structured Feedback and Hints**
+The system will use curated exercises and structured reasoning stages rather than evaluating arbitrary student-written programs.
 
-Provide prepared feedback for correct and incorrect answers, along with step-by-step hints to help learners understand each reasoning stage.
+#### Core Features (Must)
 
-**5. Learning Progress**
+1. **Exercise Library:** Provide 12 selected algorithm exercises across four categories, including problem statements, examples, constraints, and difficulty levels.
 
-Allow registered Students to save their exercise attempts, completed stages, and hint usage. Provide a dashboard to view completed and unfinished exercises, and allow Students to resume their progress.
+2. **Guided Problem-Solving:** Guide learners through problem understanding, information extraction, problem modeling, algorithm selection, and solution construction using structured activities.
 
-**6. Cross-Platform Access**
+3. **Algorithm Comparison:** Allow learners to evaluate predefined candidate algorithms based on correctness, efficiency, problem constraints, and suitability.
 
-Allow Guests and Students to browse exercises and complete guided practice through Web and mobile applications using the same backend. Students can access their saved progress from either platform.
+4. **Rule-Based Validation and Misconception Detection:** Validate structured responses on the server, identify predefined common mistakes, and return appropriate feedback.
 
-**7. Basic Admin Management**
+5. **Progressive Feedback and Hints:** Provide prepared explanations and hints for different reasoning stages.
 
-Allow authorized Admins to create and edit draft exercises, manage exercise content, and publish or unpublish exercises using predefined templates and configuration forms.
+6. **Interactive Algorithm Visualization:** Support state exploration, step-by-step tracing, or intermediate-result prediction for selected exercises.
 
-# Scope Exclusions 
-- AI Tutor / LLM Chatbot
-- Arbitrary Code Execution
-- AI-generated Exercises
-- Adaptive Learning ML Model
-- Leaderboard / Gamification
-- Social Features
-- Advanced CMS or visual exercise editor
-- Multi-language Code Support
-- Microservices / Distributed Systems
-- Production-scale Deployment
+7. **Variant / Transfer Problems:** Provide predefined variations for selected exercises, allowing learners to analyze how changes in constraints affect the solution.
+
+8. **Learning Progress and Basic Analytics:** Save Student attempts, stage completion, hint usage, and identified mistakes. Display progress and basic skill-level performance in the Student dashboard.
+
+9. **Cross-Platform Access:** Support the core learning workflow on Web and Android/iOS using the same backend.
+
+10. **Basic Admin Management:** Allow authorized Admins to manage exercise content, reasoning stages, answer rules, feedback, hints, and exercise versions.
+
+#### Planned Features (Should)
+
+1. **Selective / Personalized Review:** Recommend reasoning stages for review based on previous mistakes, retries, and hint usage. Students can manually choose which stages to review.
+
+2. **Structured Code Construction:** Extend basic pseudocode and fill-in-the-blank activities with predefined code templates, incorrect-line identification, and statement selection.
+
+3. **External Problem Recommendations:** Recommend relevant LeetCode or other online judge problems using curated metadata, algorithm topics, and Student learning records. The system will not execute or grade submissions from external platforms.
+
+#### Optional Features
+
+- Advanced side-by-side algorithm visualization and execution comparison.
+- More detailed learning analytics and review recommendations.
+- Additional interactive problem types and exercise templates.
+
+#### Out of Scope for MVP
+
+- AI-Assisted Exercise Authoring / AI-generated complete exercises.
+- AI Tutor / LLM Chatbot.
+- Full code execution, compilation, or online judge integration.
+- Machine-learning-based adaptive learning or recommendation models.
+- Automatic grading of unrestricted free-text answers.
+- Competitive contests, leaderboards, and social features.
+- Advanced visual exercise editor.
+- Multi-language code execution support.
+- Microservices or distributed systems.
+- Production-scale deployment.
+
+#### Exercise Coverage
+
+The target remains 12 complete guided exercises across four algorithm categories.
+
+Exercises may have different reasoning stages and levels of interaction. All published exercises must have reviewed content, working validation, feedback, and appropriate hints.
+
+At least two exercises from different algorithm categories should demonstrate a deeper learning workflow, including problem decomposition, algorithm comparison, misconception-aware feedback, interactive visualization where appropriate, and transfer challenges.
+
+The final exercise coverage and development order may be adjusted after the first complete proof of concept and advisor review.
