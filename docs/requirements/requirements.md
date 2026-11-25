@@ -22,7 +22,7 @@
 | Date       | Version | Changes                                                                                                                |
 | ---------- | ------- | ---------------------------------------------------------------------------------------------------------------------- |
 | 2026-11-09 | 0.1     | initial draft adapted from proposal; <br/>requirements are written in "shall" format for mandatory system requirements |
-|2026-11-18|0.2|product scope changed; <br/>features adjusted; <br/>TBD|
+|2026-11-25|0.2|product scope changed; <br/>2.2 features adjusted; <br/>TBD|
 
 ## 1. Introduction
 
@@ -72,17 +72,28 @@ The planned system includes a Web application (with an admin interface), a mobil
 
 The current Figma prototype already shows the reasoning workspace, feedback/hint components, a student dashboard, and admin screens; implementation may simplify or extend these designs during development.
 
-### 2.2 Product Functions
+### 2.2 Product Functions (updated)
 
-1. Browse published exercises across four algorithm categories.
-2. Start and complete a guided reasoning exercise as a Guest or Student.
-3. Display ordered reasoning stages and structured answer options.
-4. Check answers using predefined server-side rules, show feedback, and retry.
-5. Provide hints progressively when requested.
-6. Register/sign in and save or resume a Student's unfinished exercise.
-7. Display a simple Student dashboard showing completed and in-progress work.
-8. Allow authorized admins to manage and publish selected exercises while keeping different versions of exercise records.
-9. Offer the same core learning workflow on web and mobile.
+1. Browse published exercises across four algorithm categories: Divide and Conquer, Dynamic Programming, Greedy Algorithms, and Backtracking/Search.  
+2. Start and complete guided reasoning exercises as a Guest or registered Student.  
+3. Guide learners through problem decomposition, including identifying inputs, outputs, objectives, constraints, parameters, and variables from natural-language problem statements.  
+4. Help learners build structured problem representations and identify important algorithm patterns before selecting a solution.  
+5. Allow learners to compare candidate algorithms, evaluate their suitability, and understand the reasoning behind different solution strategies.  
+6. Guide learners in selecting appropriate algorithms and data structures, defining solution logic, and constructing basic pseudocode or algorithm steps.  
+7. Check structured answers using predefined server-side rules, identify selected common misconceptions, provide contextual feedback, and allow retries.  
+8. Provide progressive hints when requested to help learners complete reasoning stages.  
+9. Provide interactive algorithm visualization for selected exercises, allowing learners to explore algorithm states, transitions, and intermediate results.  
+10. Provide predefined variant or transfer problems for selected exercises to help learners understand how changing problem constraints affects algorithm selection and solution design.  
+11. Allow Students to register, sign in, save their exercise attempts, and resume unfinished exercises across devices.  
+12. Display a Student dashboard showing completed and in-progress exercises, learning performance, hint usage, and common mistakes.  
+13. Allow authorized Admins to create, edit, review, publish, and unpublish exercises, including their reasoning stages, validation rules, hints, and selected variants.  
+14. Provide the same core learning workflow through Web and Android/iOS mobile applications using a shared backend.
+
+**Should (after core features):**
+
+15. Allow Students to review selected reasoning stages based on previous mistakes and learning performance.  
+16. Provide additional structured code-construction activities, such as identifying incorrect statements and completing predefined code templates.  
+17. Recommend relevant external algorithm practice problems based on completed exercises, algorithm topics, and identified learning weaknesses.
 
 ### 2.3 Product Constraints
 
